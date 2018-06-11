@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+
+<struts>
+  <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+  <constant name="struts.objectFactory" value="spring"/>
+  <constant name="struts.objectFactory.spring.autoWire.alwaysRespect" value="true"></constant>
+  <package name="basic" extends="json-default">
+        <global-exception-mappings>
+  			<exception-mapping exception="cn.hncj.hotel.Exception.MyRuntimeException" result="RuntimeException"/>
+  		</global-exception-mappings>
+ </package>
+</struts>
